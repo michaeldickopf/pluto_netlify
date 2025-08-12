@@ -34,10 +34,10 @@
           <label>Name <input type="text" name="name" /></label>
         </p>
         <p>
-          <label>Email <input type="email" name="email" /></label>
+          <label>Email <input type="email" id="mail" name="email" /></label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit" class="btn btn-primary" >Join the Waiting List</button>
         </p>
       </form>
     </div>
@@ -121,8 +121,13 @@
     <h2>
       Wait-list <span class="highlight">counter:</span>
     </h2>
-    <div class="counter" id="counter-display"></div>
-    <p><span id="counter-number">0000</span> Rebels already enlisted.</p>
+    <div class="counter" id="counter-display">
+      <div class="digit">0</div>
+      <div class="digit">0</div>
+      <div class="digit">4</div>
+      <div class="digit">2</div>
+    </div>
+      <p><span id="counter-number"></span> Rebels already enlisted.</p>
   </section>
 
   <footer class="container">
