@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pluto SecureLock</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -31,50 +34,55 @@
       </form> -->
       <form name="contact" netlify>
         <p>
-          <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Email <input type="email" id="mail" name="email" /></label>
-        </p>
-        <p>
-          <button type="submit" class="btn btn-primary" >Join the Waiting List</button>
+          <label><input type="text" name="name" placeholder="Name" /></label>
+ 
+          <label> <input type="email" id="mail" name="email" placeholder="Drop your Email" /></label>
+
+          <button type="submit" class="btn btn-primary"  >Join</button>
         </p>
       </form>
     </div>
-</div>
-  <section class="tagline container">
-    <h2>Un-Cloud Your Passwords.</h2>
-    <p>No servers. No snoops. <strong>Just you</strong> and your keys.</p>
-  </section>
 
-  <section class="problem-section container">
-    <h2>The Problem</h2>
-    <h3>You reuse passwords. Don’t lie.</h3>
+</div>
+
+<div class="tagline_container">
+    <h1><span class="highlight">Un-Cloud</span> Your Passwords.</h1>
+    <h2><font style="color: #DCFC73;">No</font> servers. <font style="color: #DCFC73;">No</font> snoops. <span class="highlight">Just you</span> and <font style="color: #DCFC73;">your keys.</font></h2>
+</div>
+
+<div class="line-break">
+  <hr>
+</div>
+
+
+<div class="problem-section_container">
+    <h1>The Problem</h1>
+    <p>You reuse passwords. <font style="color: #DCFC73;">Don’t lie.</font></p>
     <div class="cards">
       <div class="card">
-        <div class="card-icon">🔑</div>
+        <div class="card-icon"><img ></div>
         <p>We all face significant challenges in managing secure, unique passwords across multiple devices.</p>
       </div>
       <div class="card">
-        <div class="card-icon">⌨️</div>
+        <div class="card-icon"></div>
         <p>Remembering and typing long, complex passwords is frustrating and time-consuming.</p>
       </div>
       <div class="card">
-        <div class="card-icon">☁️</div>
+        <div class="card-icon"></div>
         <p>Plus, let’s be real... Storing passwords online increases the risk of hacking, raising concerns about data security and user trust.</p>
       </div>
       <div class="card">
-        <div class="card-icon">🔒</div>
+        <div class="card-icon"></div>
         <p>While password managers aim to simplify this process, they offer limited help unless the user is already logged in.</p>
       </div>
     </div>
-    <p class="problem-note">Your passwords are currently “safe” in the cloud. Think that’s secure? Ask the 33 million LastPass users who got burned.</p>
-  </section>
-
+    <p class="problem-note">Your passwords are currently “safe” in the cloud. </p> <p> <strong>Think that’s secure?</strong> Ask the millions of people that already got burned from password leaks.🔥</p>
+</div>
+<!--
   <div class="manifesto-banner">
-    <div class="manifesto-text">
+    <div class="manifesto-text">-->
       <!-- Repeated text to create illusion of an endless banner -->
-      <span>Our Manifesto</span><span>Our Manifesto</span><span>Our Manifesto</span>
+      <!-- <span>Our Manifesto</span><span>Our Manifesto</span><span>Our Manifesto</span>
       <span>Our Manifesto</span><span>Our Manifesto</span><span>Our Manifesto</span>
       <span>Our Manifesto</span><span>Our Manifesto</span><span>Our Manifesto</span>
       <span>Our Manifesto</span><span>Our Manifesto</span><span>Our Manifesto</span>
@@ -82,18 +90,42 @@
       <span>Our Manifesto</span><span>Our Manifesto</span><span>Our Manifesto</span>
     </div>
   </div>
+-->
+  <section class="trust-section_container">
+    <h2><font style="color: #DCFC73;"> Trust math</font>, not companies.</h2>
+    <div class="trust-grid"  role="list">
+      <hr>
+      <div class="row" role="listitem">
+        <div class="left">Local-first encryption (AES-256)</div>
+        <div class="dash" aria-hidden="true"></div>
+        <div class="right">Keys never leave your device.</div>
+      </div>
 
-  <section class="trust-section container">
-    <h2>Trust math, not companies.</h2>
-    <div class="trust-grid">
-      <div>Local-first encryption (AES - 256)</div>
-      <div>Keys never leave your device.</div>
-      <div>Peer-to-peer sync over LAN</div>
-      <div>0 servers, 0 metadata.</div>
-      <div>Open source & reproducible builds</div>
-      <div>Inspect, verify, fork.</div>
-      <div>No telemetry by default</div>
-      <div>Privacy is the product, not a setting.</div>
+      <hr>
+
+      <div class="row" role="listitem">
+        <div class="left">Peer-to-peer sync over LAN</div>
+        <div class="dash" aria-hidden="true"></div>
+        <div class="right">0 servers, 0 metadata.</div>
+      </div>
+
+      <hr>
+
+      <div class="row" role="listitem">
+        <div class="left">Open source & reproducible builds</div>
+        <div class="dash" aria-hidden="true"></div>
+        <div class="right">Inspect, verify, fork.</div>
+      </div>
+
+      <hr>
+
+      <div class="row" role="listitem">
+        <div class="left">No telemetry by default</div>
+        <div class="dash" aria-hidden="true"></div>
+        <div class="right">Privacy is the product, not a setting.</div>
+      </div>
+
+      <hr>
     </div>
   </section>
 
