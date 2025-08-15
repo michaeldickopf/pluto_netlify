@@ -136,24 +136,20 @@ hr{
 
 /* Mail Signup Section */
 .signup-container {
-    display: flex;
-    width: 100%;
-    height: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding-top: 13vh;
+        padding-left: 12vw;
+        padding-right: 12vw;
+        align-items: center;
+
 }
 
 
 
-.signup-container a {
-    width: 50%;
-    margin-left: 5%;
-}
 
 
-.signup {
-    width: 50%;
-    margin-right: 2%;
-    margin-top: 10%;
-}
 
 .signup label input {
     border-radius: 30px;
@@ -215,9 +211,9 @@ hr{
 
 .line-break {
     padding-top: 100px;
-    text-align: center;    
+    text-align: center;
     width: 90vw;
-    padding-left: 10vw;    
+    padding-left: 10vw;
 }
 
 .problem-section_container{
@@ -237,8 +233,6 @@ hr{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-
-
 }
 
 
@@ -335,9 +329,53 @@ hr{
     translate: 0 2px; /* optical centering */
 }
 
-
-.waitlist-section {
+.about-section{
+    width: 90vw;
+    padding-left: 10vw;
     text-align: center;
+    padding-top: 100px;
+}
+
+.abouts{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+}
+
+.about-point-button{
+    text-align: center;
+    background-color: #5a6b8e;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 20px 20px;
+    border-color: #ddd;
+}
+
+.about-point-right{
+text-align: left;
+}
+
+
+
+
+.waitlist-section{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+    grid-template-columns: 20vw 40vw;
+    align-items: center;
+    width: 60vw;
+    padding-left: 12vw;
+    gap: 8vw;
+
 }
 
 .waitlist-section h2 {
@@ -349,6 +387,22 @@ hr{
     color: #c6ff00;
 }
 
+.waitlist{
+
+
+}
+
+.wait-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.wait-rebels{
+    padding-left: 41vw;
+    text-align: left;
+}
+
 .counter {
     display: flex;
     justify-content: center;
@@ -357,19 +411,49 @@ hr{
 }
 
 .digit {
-    width: 60px;
-    height: 80px;
+    width: 10vw;
+    height: 25vh;
     background-color: #1d2a6c;
-    border-radius: 10px;
+    border-radius: 3vw;
+    border-color: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 5vw;
     font-weight: bold;
-    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    -ms-border-radius: 3vw;
+    -o-border-radius: 3vw;
+    box-shadow: 0 4px 12px rgba(250,250,250,0.75) inset,
+                0 4px 16px rgba(0,0,0,0.35);
+    border: 1px solid var(--digit-border);
 }
 
 .waitlist-section p {
     font-size: 1em;
     color: #ddd;
+}
+
+.footer-container{
+    padding-top: 20vh;
+    padding-bottom: 3vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding-top: 2vh;
+}
+
+.footer-left{
+    text-align: left;
+}
+
+
+.footer-right{
+    text-align: right;
 }
